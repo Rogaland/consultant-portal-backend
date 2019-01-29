@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <img src="" data-th-src="|cid:logo|" class="center-block img-responsive"
+                 alt="Rogaland Fylkeskommune logo"/>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 th:text="'Hei ' + ${ownerFullname} + '!'"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <p th:text="'Din konsulent ' + ${consultantFullname} + ' uløper snart. Hvis konsulenten trenger brukeren lengre så kan du utvide tiden ved å benytte lenken under. Hvis ikke vil konsulenten bli automatisk slettet.'"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="https://konsulent.rogfk.no/?type=confirmed">Konsulentportalen</a>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <div class="row">
+
+        <p>
+            <strong>Med vennlig hilsen</strong>
+            IKT- og arkivavdeling
+
+        <br/><br/><br/>
+        <small>
+            Rogaland fylkeskommune | T: 51 51 67 00 | E: brukerhjelp@rogfk.no | W: <a
+                href="http://www.rogfk.no">http://www.rogfk.no</a>
+        </small>
+
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
